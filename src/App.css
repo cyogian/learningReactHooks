@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.Box {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.Hook {
+  border-radius: 10px;
+}

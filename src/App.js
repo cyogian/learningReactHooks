@@ -7,7 +7,7 @@ import Layout from "./containers/Layout";
 
 import "./App.css";
 import Counters from "./containers/Counters";
-import ContextHooks from "./containers/ContextHooks";
+import ContextAPI from "./containers/ContextAPI";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
               <DataFetching />
             </Route>
             <Route path="/context" exact>
-              <ContextHooks />
+              <ContextAPI />
             </Route>
           </Switch>
         </Layout>

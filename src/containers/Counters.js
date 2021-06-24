@@ -14,6 +14,25 @@ import MouseContainer from "../components/Counters/MouseContainer";
 
 const Counters = () => (
   <>
+    <div
+      style={{
+        color: "yellow",
+        textAlign: "left",
+        lineHeight: "2rem",
+      }}
+    >
+      <hr />
+      &emsp;Note
+      <hr />
+      <ul style={{ color: "lightgreen" }}>
+        <li>Borders with Sharp Corners are Class Based Components.</li>
+        <li>
+          Borders with Round Corners are Functional Components micking Class
+          Based Components using useState & useEffect Hooks.
+        </li>
+      </ul>
+      <hr />
+    </div>
     <ClassCounter />
     <HookCounter />
     <HookCounter2 />

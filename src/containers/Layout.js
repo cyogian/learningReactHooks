@@ -11,7 +11,7 @@ const Layout = (props) => (
         Data Fetching
       </NavLink>
       <NavLink to="/context" activeClassName="Active" exact>
-        Context Hook
+        Context Hooks
       </NavLink>
     </ul>
     {props.children}

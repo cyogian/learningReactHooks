@@ -48,6 +48,7 @@
 
 #PostList {
   list-style: none;
+  padding-inline-start: 0;
 }
 
 .Post button {
@@ -68,6 +69,11 @@
 
 .Post button:active {
   transform: scale(0.99);
+}
+
+#CurrentPost {
+  border: 4px solid green;
+  margin: 0 1rem;
 }
 
 #CurrentPost p {

@@ -73,3 +73,57 @@
 #CurrentPost p {
   padding: 2rem;
 }
+
+#Links a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: lighter;
+}
+
+#Links a.Active {
+  font-weight: normal;
+}
+
+#Links a:hover {
+  font-weight: normal;
+}
+
+#Links a::before {
+  content: "< ";
+  font-weight: bolder;
+}
+
+#Links a:hover::before,
+:hover::after {
+  color: yellowgreen;
+}
+
+#Links a::after {
+  content: " >";
+  font-weight: bolder;
+}
+
+#Links {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: fit-content;
+  margin: 1rem auto 2rem auto;
+}
+
+@media (max-width: 480px) {
+  #Links {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: none;
+  }
+
+  #Links a::before {
+    content: ">";
+    padding-right: 0.5rem;
+  }
+
+  #Links a::after {
+    display: none;
+  }
+}

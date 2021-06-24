@@ -6,7 +6,7 @@ const HookCounter5 = () => {
   useEffect(() => {
     // componentDidMount + componentDidUpdate + Conditional
     console.log("useEffect - Updating document title");
-    document.title = `Hook Clicked ${count} times`;
+    document.title = `Hook Clicked ${count} times - Learning React Hooks`;
   }, [count]);
   return (
     <div

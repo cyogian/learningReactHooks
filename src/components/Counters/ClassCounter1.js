@@ -8,13 +8,13 @@ class ClassCounter1 extends Component {
 
   componentDidMount() {
     console.log("Updating document title");
-    document.title = `Class Clicked ${this.state.count} times`;
+    document.title = `Class Clicked ${this.state.count} times - Learning React Hooks`;
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.count !== this.state.count) {
       console.log("Updating document title");
-      document.title = `Class Clicked ${this.state.count} times`;
+      document.title = `Class Clicked ${this.state.count} times - Learning React Hooks`;
     }
   }
 

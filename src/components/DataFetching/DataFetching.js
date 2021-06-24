@@ -9,6 +9,7 @@ const DataFetching = () => {
 
   //   fetch PostList
   useEffect(() => {
+    document.title = "Data Fetching - Learning React Hooks";
     axios
       .get("https://jsonplaceholder.typicode.com/posts")
       .then((res) => {
@@ -32,7 +33,6 @@ const DataFetching = () => {
         console.log(err);
       });
   }, [id]);
-
   return (
     <div>
       {post.id ? (

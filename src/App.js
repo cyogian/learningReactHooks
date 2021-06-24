@@ -1,41 +1,32 @@
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import { Switch } from "react-router";
+
+import DataFetching from "./components/DataFetching/DataFetching";
+import Layout from "./containers/Layout";
+
 import "./App.css";
-import ClassCounter from "./components/ClassCounter";
-import ClassCounter1 from "./components/ClassCounter1";
-import ClassMouse from "./components/ClassMouse";
-import DataFetching from "./components/DataFetching";
-import HookCounter from "./components/HookCounter";
-import HookCounter2 from "./components/HookCounter2";
-import HookCounter3 from "./components/HookCounter3";
-import HookCounter4 from "./components/HookCounter4";
-import HookCounter5 from "./components/HookCounter5";
-import IntervalClassCounter from "./components/IntervalClassCounter";
-import IntervalHookCounter from "./components/IntervalHookCounter";
-import MouseContainer from "./components/MouseContainer";
+import Counters from "./containers/Counters";
+import ContextHooks from "./containers/ContextHooks";
 
 function App() {
-  const [showCounters, setShowCounters] = useState(false);
   return (
     <div className="App">
-      <button onClick={() => setShowCounters((prevShow) => !prevShow)}>
-        {showCounters ? "Hide" : "Show"} Counters
-      </button>
-      {showCounters ? (
-        <>
-          <ClassCounter />
-          <HookCounter />
-          <HookCounter2 />
-          <HookCounter3 />
-          <HookCounter4 />
-          <ClassCounter1 />
-          <HookCounter5 />
-          <ClassMouse />
-          <MouseContainer />
-          <IntervalClassCounter />
-          <IntervalHookCounter />
-        </>
-      ) : null}
-      <DataFetching />
+      <BrowserRouter>
+        <Layout>
+          <Switch>
+            <Route path="/" exact>
+              <Counters />
+            </Route>
+            <Route path="/fetching" exact>
+              <DataFetching />
+            </Route>
+            <Route path="/context" exact>
+              <ContextHooks />
+            </Route>
+          </Switch>
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 }

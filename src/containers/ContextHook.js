@@ -1,20 +1,19 @@
 import React from "react";
-import ComponentC from "../components/Context/ComponentC";
+import HookComponentC from "../components/Context/HookComponentC";
 
 import { UserContext, ChannelContext } from "../components/Context/Context";
 
-const ContextAPI = () => {
-  document.title = "Context Hooks - Learning React Hooks";
+const ContextHook = () => {
   return (
-    <div className="Box" style={{ border: "2px solid purple" }}>
-      <h1>Context API</h1>
+    <div className="Box Hook" style={{ borderColor: "red" }}>
+      <h1>Context Hook</h1>
       <UserContext.Provider value={"Amar"}>
         <ChannelContext.Provider value={"Cyogian"}>
-          <ComponentC />
+          <HookComponentC />
         </ChannelContext.Provider>
       </UserContext.Provider>
     </div>
   );
 };
 
-export default ContextAPI;
+export default ContextHook;

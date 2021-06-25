@@ -26,7 +26,7 @@ class IntervalClassCounter extends Component {
       <div
         className="Box"
         style={{
-          border: "2px solid pink",
+          borderColor: "pink",
         }}
       >
         Count: {this.state.count}

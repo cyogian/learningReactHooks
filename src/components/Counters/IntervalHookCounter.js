@@ -16,7 +16,7 @@ const IntervalHookCounter = () => {
     <div
       className="Box Hook"
       style={{
-        border: "2px solid yellow",
+        borderColor: "yellow",
       }}
     >
       Count: {count}

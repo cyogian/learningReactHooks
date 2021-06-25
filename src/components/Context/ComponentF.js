@@ -1,5 +1,5 @@
 import React from "react";
-import { UserContext, ChannelContext } from "../../containers/ContextAPI";
+import { UserContext, ChannelContext } from "./Context";
 
 const ComponentF = (props) => {
   return (

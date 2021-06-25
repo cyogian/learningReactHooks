@@ -7,7 +7,7 @@ const HookCounter3 = () => {
     <form
       className="Box Hook"
       style={{
-        border: "2px solid purple",
+        borderColor: "purple",
       }}
     >
       <input

@@ -28,7 +28,7 @@ const HookMouse = () => {
     <div
       className="Box Hook"
       style={{
-        border: "2px solid black",
+        borderColor: "black",
       }}
     >
       X: {position.x}

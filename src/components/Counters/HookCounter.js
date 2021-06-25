@@ -7,7 +7,7 @@ const HookCounter = () => {
     <div
       className="Box Hook"
       style={{
-        border: "2px solid dodgerblue",
+        borderColor: "dodgerblue",
       }}
     >
       <button onClick={() => setCount((prevCount) => prevCount + 1)}>

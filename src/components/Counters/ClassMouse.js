@@ -26,7 +26,7 @@ class ClassMouse extends Component {
       <div
         className="Box"
         style={{
-          border: "2px solid yellowgreen",
+          borderColor: "yellowgreen",
         }}
       >
         X - {this.state.x}

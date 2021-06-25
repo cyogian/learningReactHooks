@@ -18,7 +18,7 @@ class ClassCounter extends Component {
       <div
         className="Box"
         style={{
-          border: "2px solid green",
+          borderColor: "green",
         }}
       >
         <button onClick={this.incrementCount}>Count: {this.state.count}</button>

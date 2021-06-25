@@ -8,7 +8,7 @@ const HookCounter2 = () => {
     <div
       className="Box Hook"
       style={{
-        border: "2px solid crimson",
+        borderColor: "crimson",
       }}
     >
       <button

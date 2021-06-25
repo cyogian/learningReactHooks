@@ -16,13 +16,13 @@ const HookCounter4 = () => {
     <div
       className="Box Hook"
       style={{
-        border: "2px solid gray",
+        borderColor: "gray",
       }}
     >
       <button onClick={addItem}>Add a number</button>
       <button onClick={() => setItems([])}>Clear List</button>
       {items.length ? (
-        <ul>
+        <ul className="Box" style={{ paddingLeft: "2rem" }}>
           {items.map((item) => (
             <li key={item.id}>{item.value}</li>
           ))}

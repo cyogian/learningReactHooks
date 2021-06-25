@@ -7,7 +7,7 @@ const MouseContainer = () => {
     <div
       className="Box Hook"
       style={{
-        border: "2px solid brown",
+        borderColor: "brown",
       }}
     >
       <button onClick={() => setDisplay((prevDisplay) => !prevDisplay)}>

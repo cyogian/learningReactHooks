@@ -12,7 +12,7 @@ const HookCounter5 = () => {
     <div
       className="Box Hook"
       style={{
-        border: "2px solid magenta",
+        borderColor: "magenta",
       }}
     >
       <input

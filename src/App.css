@@ -40,6 +40,7 @@
 .Box {
   margin: 1rem;
   padding: 1rem;
+  border: 2px solid white;
 }
 
 .Hook {
@@ -74,6 +75,8 @@
 #CurrentPost {
   border: 4px solid green;
   margin: 0 1rem;
+  min-height: 300px;
+  padding-top: 0.5rem;
 }
 
 #CurrentPost p {

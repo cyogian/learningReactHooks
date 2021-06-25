@@ -23,7 +23,7 @@ class ClassCounter1 extends Component {
       <div
         className="Box"
         style={{
-          border: "2px solid cyan",
+          borderColor: "cyan",
         }}
       >
         <input

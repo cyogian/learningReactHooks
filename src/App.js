@@ -9,6 +9,8 @@ import "./App.css";
 import Counters from "./containers/Counters";
 import ContextAPI from "./containers/ContextAPI";
 import ContextHook from "./containers/ContextHook";
+import ReducerHook from "./containers/ReducerHook";
+import ContextReducer from "./containers/ContextReducer";
 
 function App() {
   return (
@@ -25,6 +27,12 @@ function App() {
             <Route path="/context" exact>
               <ContextAPI />
               <ContextHook />
+            </Route>
+            <Route path="/reducer" exact>
+              <ReducerHook />
+            </Route>
+            <Route path="/context-reducer" exact>
+              <ContextReducer />
             </Route>
           </Switch>
         </Layout>

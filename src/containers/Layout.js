@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Layout = (props) => (
-  <div>
+  <div id="Layout">
     <ul id="Links">
       <NavLink to="/" activeClassName="Active" exact>
         Counters
@@ -11,7 +11,13 @@ const Layout = (props) => (
         Data Fetching
       </NavLink>
       <NavLink to="/context" activeClassName="Active" exact>
-        Context Hooks
+        Context Hook
+      </NavLink>
+      <NavLink to="/reducer" activeClassName="Active" exact>
+        Reducer Hook
+      </NavLink>
+      <NavLink to="/context-reducer" activeClassName="Active" exact>
+        Context Reducer
       </NavLink>
     </ul>
     {props.children}

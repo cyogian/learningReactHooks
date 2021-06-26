@@ -43,7 +43,7 @@ const DataFetching = () => {
       });
   }, [id]);
   return (
-    <div>
+    <div className="Box Hook">
       {post.id ? (
         <div id="CurrentPost">
           {loadingPost ? (

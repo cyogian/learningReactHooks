@@ -11,6 +11,8 @@ import ContextAPI from "./containers/ContextAPI";
 import ContextHook from "./containers/ContextHook";
 import ReducerHook from "./containers/ReducerHook";
 import ContextReducer from "./containers/ContextReducer";
+import DataFetchingOne from "./components/DataFetching/DataFetchingOne";
+import DataFetchingTwo from "./components/DataFetching/DataFetchingTwo";
 
 function App() {
   return (
@@ -33,6 +35,12 @@ function App() {
             </Route>
             <Route path="/context-reducer" exact>
               <ContextReducer />
+            </Route>
+            <Route path="/fetching-one" exact>
+              <DataFetchingOne />
+            </Route>
+            <Route path="/fetching-two" exact>
+              <DataFetchingTwo />
             </Route>
           </Switch>
         </Layout>

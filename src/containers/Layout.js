@@ -19,6 +19,12 @@ const Layout = (props) => (
       <NavLink to="/context-reducer" activeClassName="Active" exact>
         Context Reducer
       </NavLink>
+      <NavLink to="/fetching-one" activeClassName="Active" exact>
+        Data Fetching One
+      </NavLink>
+      <NavLink to="/fetching-two" activeClassName="Active" exact>
+        Data Fetching Two
+      </NavLink>
     </ul>
     {props.children}
   </div>

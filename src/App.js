@@ -13,6 +13,7 @@ import ReducerHook from "./containers/ReducerHook";
 import ContextReducer from "./containers/ContextReducer";
 import DataFetchingOne from "./components/DataFetching/DataFetchingOne";
 import DataFetchingTwo from "./components/DataFetching/DataFetchingTwo";
+import CallbackHook from "./containers/CallbackHook";
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
             </Route>
             <Route path="/fetching-two" exact>
               <DataFetchingTwo />
+            </Route>
+            <Route path="/callback" exact>
+              <CallbackHook />
             </Route>
           </Switch>
         </Layout>

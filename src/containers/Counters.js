@@ -14,6 +14,7 @@ import MouseContainer from "../components/Counters/MouseContainer";
 
 const Counters = () => (
   <>
+    <h1>Counters</h1>
     <div
       style={{
         color: "yellow",

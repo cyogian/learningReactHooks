@@ -26,6 +26,7 @@ const ContextReducer = () => {
       value={{ countState: count, countDispatch: dispatch }}
     >
       <div>
+        <h1>Reducer with Context</h1>
         Count = {count}
         <ComponentA />
         <ComponentB />

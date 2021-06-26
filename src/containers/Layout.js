@@ -25,6 +25,9 @@ const Layout = (props) => (
       <NavLink to="/fetching-two" activeClassName="Active" exact>
         Data Fetching Two
       </NavLink>
+      <NavLink to="/callback" activeClassName="Active" exact>
+        Callback Hook
+      </NavLink>
     </ul>
     {props.children}
   </div>

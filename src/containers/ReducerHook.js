@@ -9,6 +9,7 @@ const ReducerHook = () => {
   });
   return (
     <div>
+      <h1>Reducer Hook</h1>
       <CounterOne />
       <CounterTwo />
       <CounterThree />

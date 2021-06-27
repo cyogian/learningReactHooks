@@ -28,6 +28,12 @@ const Layout = (props) => (
       <NavLink to="/callback" activeClassName="Active" exact>
         Callback Hook
       </NavLink>
+      <NavLink to="/memo" activeClassName="Active" exact>
+        Memo Hook
+      </NavLink>
+      <NavLink to="/ref" activeClassName="Active" exact>
+        Ref Hook
+      </NavLink>
     </ul>
     {props.children}
   </div>

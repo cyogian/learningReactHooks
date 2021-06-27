@@ -14,6 +14,8 @@ import ContextReducer from "./containers/ContextReducer";
 import DataFetchingOne from "./components/DataFetching/DataFetchingOne";
 import DataFetchingTwo from "./components/DataFetching/DataFetchingTwo";
 import CallbackHook from "./containers/CallbackHook";
+import MemoHook from "./containers/MemoHook";
+import RefHook from "./containers/RefHook";
 
 function App() {
   return (
@@ -45,6 +47,12 @@ function App() {
             </Route>
             <Route path="/callback" exact>
               <CallbackHook />
+            </Route>{" "}
+            <Route path="/memo" exact>
+              <MemoHook />
+            </Route>
+            <Route path="/ref" exact>
+              <RefHook />
             </Route>
           </Switch>
         </Layout>

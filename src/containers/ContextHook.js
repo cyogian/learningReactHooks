@@ -6,7 +6,7 @@ import { UserContext, ChannelContext } from "../components/Context/Context";
 const ContextHook = () => {
   return (
     <div id="ContextHook" className="Box Hook" style={{ borderColor: "red" }}>
-      <h1>Context Hook</h1>
+      <h1>useContext Hook</h1>
       <UserContext.Provider value={"Amar"}>
         <ChannelContext.Provider value={"Cyogian"}>
           <HookComponentC />

@@ -121,7 +121,7 @@
   padding-left: 0;
 }
 
-@media (max-width: 1560px) {
+@media (max-width: 1660px) {
   #Links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -135,6 +135,12 @@
 
   #Links a::after {
     display: none;
+  }
+}
+
+@media (max-width: 1560px) {
+  #Links {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 

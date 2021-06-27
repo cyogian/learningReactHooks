@@ -34,6 +34,9 @@ const Layout = (props) => (
       <NavLink to="/ref" activeClassName="Active" exact>
         Ref Hook
       </NavLink>
+      <NavLink to="/custom" activeClassName="Active" exact>
+        Custom Hooks
+      </NavLink>
     </ul>
     {props.children}
   </div>

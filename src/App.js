@@ -16,6 +16,7 @@ import DataFetchingTwo from "./components/DataFetching/DataFetchingTwo";
 import CallbackHook from "./containers/CallbackHook";
 import MemoHook from "./containers/MemoHook";
 import RefHook from "./containers/RefHook";
+import CustomHooks from "./containers/CustomHooks";
 
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
             </Route>
             <Route path="/ref" exact>
               <RefHook />
+            </Route>
+            <Route path="/custom" exact>
+              <CustomHooks />
             </Route>
           </Switch>
         </Layout>
